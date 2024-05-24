@@ -1,9 +1,8 @@
+#include <iomanip>
 #include <iostream>
 #include <string>
 #include <vector>
-
 using namespace std;
-
 void searchLetterInNames() {
   vector<string> array = {"Anton", "Yusuf", "Azzah", "Jojon", "Yunarso",
                           "Naura", "Ester", "Yunus", "Aisyah"};
@@ -17,25 +16,27 @@ void searchLetterInNames() {
     }
   }
 
-  cout << "Index: ";
+  cout << "Isi data array: " << endl;
+  cout << "Index: \t";
   for (size_t i = 0; i < array.size(); ++i) {
-    cout << i << " ";
+    cout << i << "\t";
   }
 
   cout << endl;
-  cout << "Data: ";
+  cout << "Data: \t";
+
   for (size_t i = 0; i < array.size(); ++i) {
-    cout << array[i] << " ";
+    cout << array[i] << "\t";
   }
-  cout << endl << "========================================" << endl;
 
   cout << endl;
-  cout << "Data yang dicari huruf ke 3 dan 4 adalah: Yu" << endl;
+  cout << endl;
+  cout << "Data yang dicari huruf ke 3 dan 4 adalah: Yu*" << endl;
   for (size_t i = 0; i < names.size(); ++i) {
     cout << names[i] << "  ";
   }
 
-  cout << endl << "========================================" << endl;
+  cout << endl;
   cout << endl;
   cout << "data ditemukan pada index ";
   for (size_t i = 0; i < answers.size(); ++i) {
@@ -47,7 +48,6 @@ void searchLetterInNames() {
 
   cout << endl;
 }
-
 int main() {
   searchLetterInNames();
   return 0;
